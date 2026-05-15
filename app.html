@@ -74,6 +74,44 @@ const CONFIG = {
         morning_summary: ["10:00 Transfer to New Bund Center (AWS)", "11:00 Executive meeting — Dyna.ai", "12:30 Lunch — Pudong New District"],
         afternoon_summary: ["13:30 Transfer to UnionPay, Poly Plaza", "14:00 Executive meeting — UnionPay", "15:00 Return to AWS", "15:30 Executive meeting — MiniMax", "17:00 Return to hotel"],
         evening_summary: ["Dinner — Free time"],
+        discussion_points: [
+          {
+            company: "Dyna.Ai",
+            label: "The AI Operator",
+            focus: "Operationalizing AI for high-stakes financial decisioning and results-driven deployment.",
+            topics: [
+              { title: "Results-as-a-Service (RAA) Commercial Models", justification: "Brazilian banks face high innovation taxes on failed AI pilots. Dyna's model shifts the financial risk to the vendor, charging based on measurable KPIs such as NPL reduction, which is a paradigm shift for traditional procurement." },
+              { title: "Agentic Workflow Automation", justification: "Moving beyond chatbots to autonomous agents that can execute transactions, such as opening accounts or approving credit. It demonstrates how to move from AI as an assistant to AI as a worker." },
+              { title: "Vertical-Specific LLMs for Credit", justification: "General models often hallucinate financial logic. Dyna's models are pre-trained on specialized financial datasets, ensuring higher accuracy for the last mile of credit decisioning in emerging markets." },
+              { title: "Multi-Agent Governance and Supervision", justification: "As banks deploy hundreds of specialized agents, they need a supervisor protocol. This topic covers the organizational risk of agentic drift and how to maintain human-in-the-loop oversight." },
+              { title: "Talent for AI Orchestration", justification: "Brazilian banks need to transition from builders to orchestrators. This discussion explores how Dyna structures teams to manage multiple AI vendors and internal models simultaneously." },
+            ],
+          },
+          {
+            company: "UnionPay",
+            label: "The Sovereign Rail",
+            focus: "Architecting quantum-safe infrastructure and programmable payment systems.",
+            topics: [
+              { title: "Post-Quantum Cryptography (PQC) Migration", justification: "With Q-Day approaching, UnionPay is the global testbed for upgrading billions of physical cards and terminals. This is the blueprint for protecting Brazilian payment rails from future quantum decryption." },
+              { title: "Dual-Offline CBDC Architecture", justification: "Essential for the evolution of Drex. UnionPay has implemented secure, hardware-level offline P2P payments that do not require internet connectivity, solving a major financial inclusion hurdle." },
+              { title: "Quantum Key Distribution (QKD) for Settlements", justification: "Discussing the use of physical quantum links to secure inter-bank wholesale settlements. This provides a zero-trust security model for high-value transactions that traditional encryption can no longer guarantee." },
+              { title: "Biometric-Native Identity (Multi-Modal)", justification: "UnionPay is moving toward invisible payments. Understanding the integration of vein patterns, gait, and facial recognition allows CIOs to envision a future without physical or digital cards." },
+              { title: "Cross-Border Programmable Payments", justification: "Using smart contracts on top of payment rails to automate international trade and B2B settlements. This topic bridges the gap between traditional banking and the tokenized economy." },
+            ],
+          },
+          {
+            company: "MiniMax",
+            label: "The AI Engine",
+            focus: "Computational efficiency and AI-native organizational structures.",
+            topics: [
+              { title: "Inference Cost-Optimization (M-Series)", justification: "Brazilian banks have massive retail customer bases. MiniMax's M2.5/M2.7 models offer high-performance reasoning at a fraction of the cost of Western APIs, making mass-market AI economically viable." },
+              { title: "The 10x Expert Organizational Model", justification: "MiniMax operates with an extremely lean, high-density talent pool. This provides a template for how Brazilian banks can reduce IT bloat by hiring hybrid experts across finance and AI engineering." },
+              { title: "Long-Context Financial Reasoning (10M+ Tokens)", justification: "Their models can read an entire customer history or a 1000-page regulatory document in seconds. This is critical for real-time wealth management and complex compliance auditing." },
+              { title: "Autonomous Research Agents", justification: "Automating the data scientist role. These agents can ingest raw transaction data, perform feature engineering, and generate insights without human intervention, drastically shortening the R&D cycle." },
+              { title: "Infrastructure Sovereignty and Private GPU Clusters", justification: "As data privacy becomes a competitive moat, MiniMax's approach to building private, integrated AI clusters offers a strategy for banks to avoid total dependency on Big Tech cloud providers." },
+            ],
+          },
+        ],
       },
       {
         date: "2026-05-19",
@@ -85,6 +123,32 @@ const CONFIG = {
         morning_summary: ["08:00 Transfer to Huawei, Qingpu District", "09:30 Executive meeting — Huawei", "12:00 Lunch at Huawei Campus"],
         afternoon_summary: ["13:00 Transfer to JW Marriott Hangzhou", "15:00 Check-in JW Marriott Hangzhou", "15:20 Transfer to Unitree, China Digital Valley", "16:00 Executive meeting — Unitree Robotics", "17:00 Return to hotel"],
         evening_summary: ["Dinner — Optional trip to Hefang Street"],
+        discussion_points: [
+          {
+            company: "Huawei",
+            label: "The Infrastructure Sovereign",
+            focus: "Full-stack AI hardware, secure connectivity, and sovereign cloud ecosystems.",
+            topics: [
+              { title: "Ascend AI Ecosystem & Compute Sovereignty", justification: "With global GPU shortages and geopolitical restrictions, Huawei's Ascend/CANN stack offers a blueprint for building high-performance AI clusters independent of Western silicon. This is vital for Brazilian banks seeking strategic autonomy." },
+              { title: "5.5G/6G & Ultra-Low Latency Financial Rails", justification: "Brazilian banking depends on the speed of Pix and Open Finance. Exploring Huawei's 5.5G deployments reveals how to support millions of concurrent, high-security transactions with near-zero latency in high-density urban areas." },
+              { title: "AI-Native Cloud Security (Immune Systems)", justification: "Cybersecurity is the primary risk for CIOs. Huawei's approach treats the cloud as an immune system, using AI to predict and neutralize threats at the hardware level before they reach the software layer." },
+              { title: "Liquid-Cooled, Green Data Centers (PUE Optimization)", justification: "As AI workloads drive up power consumption, banks face strict ESG mandates. Huawei's liquid-cooling solutions demonstrate how to scale compute power while keeping Power Usage Effectiveness (PUE) below 1.1." },
+              { title: "The Seeds for the Future Talent Pipeline", justification: "Huawei's massive internal training programs show how to upskill thousands of legacy engineers into AI and cloud specialists, providing a scalable model for Brazil's tech talent gap." },
+            ],
+          },
+          {
+            company: "Unitree Robotics",
+            label: "The Physical AI Frontier",
+            focus: "Embodied AI, humanoid robotics, and autonomous physical security.",
+            topics: [
+              { title: "Humanoid Robotics in Branch Automation", justification: "While digital banking is dominant, physical branches still exist. Unitree's G1 and H1 humanoids offer a glimpse into physical banking agents that can handle concierge tasks, physical document processing, and customer assistance." },
+              { title: "Embodied AI & Large Motion Models (LMM)", justification: "Moving AI from chatting to doing. This topic explores how Large Motion Models allow robots to navigate complex, unmapped bank environments autonomously, adapting to human presence in real time." },
+              { title: "Autonomous Data Center & HQ Security", justification: "Replacing or augmenting human security with quadruped robots for 24/7 patrolling. This reduces operational costs and improves response times for physical intrusions or environmental hazards in critical infrastructure." },
+              { title: "Robot-as-a-Service (RaaS) Financing Models", justification: "For CIOs, the acquisition of physical robotics is a Capex hurdle. Discussing RaaS allows banks to explore leasing and maintaining robotic fleets through OpEx models, similar to software licensing." },
+              { title: "Human-Machine Collaboration Frameworks", justification: "Integrating robots requires a shift in team organization. This topic focuses on the Robot Manager role and how IT teams monitor, maintain, and deploy physical AI fleets alongside human employees." },
+            ],
+          },
+        ],
       },
       {
         date: "2026-05-20",
@@ -96,6 +160,32 @@ const CONFIG = {
         morning_summary: ["08:30 Transfer to Ant Group, Xi Xi Lu", "09:30 Exhibition tour — Ant Group", "10:30 Executive meeting — Ant Group", "12:30 Transfer to Alibaba, Dengcai St"],
         afternoon_summary: ["13:00 Lunch sponsored by Alibaba", "14:00 Exhibition tour — Alibaba Cloud", "15:00 Executive meeting — Alibaba", "17:30 Return to hotel"],
         evening_summary: ["Dinner — Optional at Forty8 Restaurant"],
+        discussion_points: [
+          {
+            company: "Ant Group",
+            label: "The AI-First Fintech Giant",
+            focus: "Trusted AI, programmable finance, and the industrialization of AI agents.",
+            topics: [
+              { title: "Agentic Workflows & Tbox Platform", justification: "Ant has moved from simple chatbots to industrial AI agents. Its Tbox platform allows zero-code agent creation, offering a blueprint for automating complex back-office workflows and customer service." },
+              { title: "Tokenization & AntChain Web3 Infrastructure", justification: "Ant Group is a leader in real-world asset tokenization and cross-border settlement via AntChain. Discussing the convergence of AI and Web3 helps CIOs envision next-generation Drex applications." },
+              { title: "Trustworthy AI & Privacy-Preserving Computing", justification: "Ant's focus on trustworthy AI addresses the black box problem of financial models. Its use of TEE and MPC allows banks to collaborate on data without compromising LGPD compliance or privacy." },
+              { title: "Post-Quantum Cryptography (PQC) for Digital Identity", justification: "As digital signatures become vulnerable, Ant is integrating PQC into identity stacks such as Zoloz. This is critical for securing biometric banking against harvest now, decrypt later quantum threats." },
+              { title: "Organizational Pivot to AI-First & Global Talent", justification: "Ant has restructured as an AI-first entity, with significant R&D spend and new regional hubs. This offers a case study on how to pivot a massive fintech workforce toward AI-native product development." },
+            ],
+          },
+          {
+            company: "Alibaba.com",
+            label: "The Full-Stack Intelligence Engine",
+            focus: "Model-as-a-Service (MaaS), computational sovereignty, and cloud-embedded AI.",
+            topics: [
+              { title: "Full-Stack Cloud-AI & MaaS (Bailian Studio)", justification: "Alibaba Cloud's Bailian platform is the gateway to the Qwen ecosystem. Discussing MaaS helps CIOs understand how to deploy high-performance LLMs through integrated hardware-software stacks." },
+              { title: "Quantum-Inspired Algorithms on E-HPC", justification: "Alibaba's quantum-inspired algorithms on Elastic High-Performance Computing are already solving complex financial optimization and risk simulation problems, creating a pragmatic bridge to the quantum era." },
+              { title: "Cloudverse & Decentralized Financial Infrastructure", justification: "Alibaba's Cloudverse provides an infrastructure layer for Web3 and metaverse capabilities. For CIOs, it suggests how banks could support tokenized deposits and digital assets securely at scale." },
+              { title: "AI-Powered Immune System Security", justification: "Alibaba has demonstrated AI-driven sovereign security that anticipates threats using Qwen's reasoning. This topic explores the shift from reactive security to autonomous, self-healing cloud infrastructure." },
+              { title: "Managing AI-Heavy Capex & Talent Density", justification: "Alibaba Cloud Intelligence is growing quickly but faces margin pressure from AI spend. This is a discussion on balancing aggressive AI infrastructure investment with profitability and talent density." },
+            ],
+          },
+        ],
       },
       {
         date: "2026-05-21",
@@ -107,6 +197,32 @@ const CONFIG = {
         morning_summary: ["04:30 Meet in lobby for airport transfer", "07:30 Flight CA1737 departs HGH", "09:40 Arrives SZX", "10:30 Transfer to JW Marriott Shenzhen"],
         afternoon_summary: ["13:30 Transfer to Ping An Financial Center (PAFC)", "14:00 Executive meeting — Ping An Bank / OneConnect", "15:30 Transfer to WeBank Tower", "16:00 Executive meeting — WeBank"],
         evening_summary: ["Dinner — Free time"],
+        discussion_points: [
+          {
+            company: "Ping An Bank / OneConnect",
+            label: "The Ecosystem Integrator",
+            focus: "Agentic execution, finance + healthcare synergy, and B2B technology export.",
+            topics: [
+              { title: "Agentic AI & One Sentence Execution", justification: "Ping An's service execution initiative shifts AI from information tools to workflow execution. For Brazilian CIOs, this is a case study on using LLMs to trigger complex workflows across a massive app ecosystem." },
+              { title: "Finance + Healthcare Ecosystem Synergy", justification: "Ping An is unique in its deep integration with physical health infrastructure. This topic explores how health data can be ethically used to refine finance products such as insurance and pension planning." },
+              { title: "Privacy Computing as a B2B Export", justification: "Through OneConnect, Ping An exports its internal trust technology to regional banks. This discussion focuses on using privacy computing to collaborate without raw data exchange while maintaining LGPD compliance." },
+              { title: "The Three Ones Framework for Senior Care", justification: "With Brazil's demographic shift, the Three Ones framework offers a roadmap for inclusive, tech-driven financial services for older customers, a segment often ignored by digital-only players." },
+              { title: "Talent Agility & Fluid Deployment", justification: "Ping An uses a fluid talent model where group technology staff deploy into fintech startups such as OneConnect. This explores how to manage human capital across a diversified conglomerate." },
+            ],
+          },
+          {
+            company: "WeBank",
+            label: "The Inclusive Digital Pioneer",
+            focus: "Privacy-preserving AI, decentralized infrastructure, and open-source governance.",
+            topics: [
+              { title: "Federated Learning (FL) for Risk Management", justification: "As a leader in federated learning, WeBank trains credit models on distributed data without moving it. This is a lesson for Brazilian banks improving joint loan models and credit scoring while keeping data on premises." },
+              { title: "FISCO BCOS & ESG-Linked Blockchain", justification: "WeBank Blockchain enables transparent social impact tracking. For CIOs, it demonstrates how to build trusted infrastructure that satisfies both regulatory transparency and international ESG reporting standards." },
+              { title: "Quantum-Resistant Digital Identity (WeDPR & PQC)", justification: "As a digital-only bank, WeBank's identity stack is moving toward post-quantum cryptography. This explores the migration path for securing millions of digital-only identities." },
+              { title: "Governance of Tech for Good & Financial Inclusion", justification: "WeBank serves hundreds of millions of customers with a joint loan model. The discussion centers on governance that balances aggressive growth with the social mandate of inclusive finance." },
+              { title: "Open Source Strategy for Talent Development", justification: "Unlike banks that hoard IP, WeBank leads an open-source ecosystem. This helps CIOs understand how to attract global talent by positioning the bank as a technology community leader." },
+            ],
+          },
+        ],
       },
       {
         date: "2026-05-22",
@@ -118,6 +234,32 @@ const CONFIG = {
         morning_summary: ["08:30 Transfer to Huawei Ox Horn Campus, Dongguan", "10:00 Executive meeting — Huawei (Security)", "12:00 Lunch at Ox Horn Campus"],
         afternoon_summary: ["12:30 Transfer to Accenture Innovation Hub, Shenzhen Bay", "14:00 Executive meeting — Accenture", "17:30 Dinner sponsored by Huawei"],
         evening_summary: [],
+        discussion_points: [
+          {
+            company: "Huawei",
+            label: "Security-First Deep Dive",
+            focus: "Sovereign hardware, self-healing infrastructure, and quantum-resistant protocols for critical financial rails.",
+            topics: [
+              { title: "AI-Driven Infrastructure Immunity", justification: "Reactive patching is increasingly insufficient. Huawei's approach treats the data center as an immune system, using autonomous agents to identify, isolate, and neutralize threats before they reach the software layer." },
+              { title: "Silicon Root of Trust (Ascend/Kunpeng Hardware Security)", justification: "Software-only security is insufficient against advanced attacks. Hardware-embedded security in the Ascend ecosystem helps ensure a root of trust from boot sequence upward for sensitive financial models." },
+              { title: "Post-Quantum Cryptography (PQC) Integration", justification: "To counter harvest now, decrypt later strategies, Huawei is embedding lattice-based cryptography into core routers and switches, providing a roadmap for protecting payment data into the 2030s." },
+              { title: "Localized Data Sovereignty & Physical Jurisdiction", justification: "CIOs must balance high-performance AI with LGPD mandates. This topic explores data-at-rest architectures where compute is deployed in private, sovereign clusters and data packets do not leave Brazil." },
+              { title: "Autonomous Threat Detection for 5.5G/6G Financial Rails", justification: "With transactions occurring in sub-10 ms intervals, security must be equally fast. This covers AI-native network slicing that monitors and secures high-speed banking traffic at the edge." },
+            ],
+          },
+          {
+            company: "Accenture",
+            label: "The Transformation Bridge",
+            focus: "Scaling Gen AI, sovereign tech integration, and organizational reinvention.",
+            topics: [
+              { title: "The Reinvention Framework for Scaling Agentic AI", justification: "Brazilian banks often get stuck in pilot purgatory. Accenture China's methodology focuses on moving from isolated AI use cases to an enterprise-wide agentic core across legacy banking stacks." },
+              { title: "Technology Sovereignty & Multi-Stack Integration", justification: "Brazilian banks may run Western infrastructure while evaluating Chinese innovation. Accenture specializes in integrating Huawei or Alibaba AI clusters with Western cloud and on-prem environments while preserving data residency." },
+              { title: "Quantum Security Maturity & PQC Roadmap", justification: "CIOs need a strategy, not just a model. Accenture provides a quantum-safe migration path for prioritizing assets and implementing PQC without disrupting 24/7 banking operations." },
+              { title: "Enterprise-Wide AI Literacy & Talent Reskilling", justification: "The technology is ready, but the workforce is not. This explores programs used to reskill legacy developers into AI orchestrators and prompt engineers at massive scale." },
+              { title: "CBDC Interoperability (Drex vs. e-CNY)", justification: "As Brazil matures with Drex and China with e-CNY, Accenture acts as a technical intermediary. This focuses on the interoperability layer required for secure, instant cross-border B2B settlements." },
+            ],
+          },
+        ],
       },
       {
         date: "2026-05-23",
@@ -874,6 +1016,61 @@ const CONFIG = {
       }
       .k span { color: var(--text-secondary); margin-right: 7px; }
 
+      .discussion {
+        margin-top: 16px;
+        display: grid;
+        gap: 10px;
+      }
+      .discussionTitle {
+        margin: 0;
+        font: 700 12px/1 'Inter', system-ui, sans-serif;
+        color: var(--text);
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+      }
+      .discussionCompany {
+        padding: 12px 13px;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--border);
+        background: var(--surface);
+      }
+      .discussionCompany h4 {
+        margin: 0;
+        font: 700 13px/1.3 'Inter', system-ui, sans-serif;
+        color: var(--text);
+      }
+      .discussionCompany .focus {
+        margin-top: 4px;
+        font: 500 12px/1.45 'Inter', system-ui, sans-serif;
+        color: var(--text-secondary);
+      }
+      .discussionTopics {
+        margin: 9px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 6px;
+      }
+      .discussionTopics details {
+        border-top: 1px solid var(--border);
+        padding-top: 7px;
+      }
+      .discussionTopics details:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+      .discussionTopics summary {
+        cursor: pointer;
+        font: 600 12px/1.4 'Inter', system-ui, sans-serif;
+        color: var(--text);
+      }
+      .discussionTopics summary::marker { color: var(--primary); }
+      .discussionTopics p {
+        margin: 5px 0 0 16px;
+        font: 400 12px/1.5 'Inter', system-ui, sans-serif;
+        color: var(--text-secondary);
+      }
+
       /* ================================================================
          COMPANY & CITY CARDS
       ================================================================ */
@@ -1329,6 +1526,49 @@ const CONFIG = {
         return result;
       }
 
+      function discussionText(points) {
+        return (points || [])
+          .map((p) =>
+            [
+              p.company,
+              p.label,
+              p.focus,
+              ...(p.topics || []).flatMap((t) => [t.title, t.justification]),
+            ].join(" "),
+          )
+          .join(" ");
+      }
+
+      function renderDiscussion(points) {
+        if (!points || !points.length) return "";
+        const companyBlocks = points.map((p) => {
+          const label = p.label ? `: ${escapeHtml(p.label)}` : "";
+          const topics = (p.topics || []).map((t) => `
+            <li>
+              <details>
+                <summary>${escapeHtml(t.title)}</summary>
+                <p>${escapeHtml(t.justification)}</p>
+              </details>
+            </li>
+          `).join("");
+
+          return `
+            <section class="discussionCompany">
+              <h4>${linkifyCompanies(p.company)}${label}</h4>
+              <div class="focus">${escapeHtml(p.focus)}</div>
+              <ul class="discussionTopics">${topics}</ul>
+            </section>
+          `;
+        }).join("");
+
+        return `
+          <div class="discussion">
+            <h3 class="discussionTitle">Discussion Points</h3>
+            ${companyBlocks}
+          </div>
+        `;
+      }
+
       // Theme
       const root = document.documentElement;
       const savedTheme = localStorage.getItem("app_theme") || "light";
@@ -1426,7 +1666,9 @@ const CONFIG = {
             " " +
             d.logistics +
             " " +
-            (d.tags || []).join(" ")
+            (d.tags || []).join(" ") +
+            " " +
+            discussionText(d.discussion_points)
           ).toLowerCase();
           if (q && !hay.includes(q)) continue;
 
@@ -1499,6 +1741,13 @@ const CONFIG = {
         ${renderSummary("Evening", d.evening_summary)}
       `;
             body.appendChild(summariesDiv);
+          }
+
+          const discussionHtml = renderDiscussion(d.discussion_points);
+          if (discussionHtml) {
+            const discussionDiv = document.createElement("div");
+            discussionDiv.innerHTML = discussionHtml;
+            body.appendChild(discussionDiv);
           }
 
           wrap.appendChild(top);
